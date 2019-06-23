@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:contentDescription="TODO"
+
+        android:src="@drawable/flower4" />
+
+    <Button
+        android:id="@+id/activity1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Roses"
+        android:layout_below="@id/image"
+        android:layout_marginLeft="5dp"
+
+        />
+
+    <Button
+        android:id="@+id/activity2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:layout_alignLeft="@id/activity1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="251dp"
+        android:layout_marginTop="-1dp"
+        android:text="Lilies" />
+
+    <Button
+        android:id="@+id/activity3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:layout_alignLeft="@id/activity2"
+        android:layout_marginLeft="-125dp"
+        android:layout_marginTop="-3dp"
+        android:text="Tulip" />
+
+</RelativeLayout>
